@@ -10,15 +10,15 @@ body {
   color: #fff;
 }
 
-h1, h2, h3 {
-  color: #4d4a4a;
-  font-family: Georgia, serif;
-}
-
 header {
   background-color: #4d4a4a;
   color: #fff;
   height: 80px;
+}
+
+h1, h2, h3 {
+  color: #4d4a4a;
+  font-family: Georgia, serif;
 }
 
 #content-box {
