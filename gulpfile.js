@@ -1,5 +1,6 @@
-const gulp = require('gulp');
-      sass = require('gulp-sass')(require('sass')); 
+const gulp = require('gulp'),
+      sass = require('gulp-sass')(require('sass')),
+      browserSync = require('browser-sync').create();
 
 //werk directory paden
 // add paths // styleDirs directories voor de styles
@@ -18,7 +19,22 @@ function style () {
         .pipe(sass())
         .on('error', sass.logError)
         .pipe(gulp.dest(paths.styleDirs.dest))
+        .pipe(browserSync.stream())
   );
 }
 
-exports.default = style;
+function reload () {
+  browserSync.reload();
+}
+
+function watch () {
+  browserSync.init(
+    {proxy: 'http://localhost:8888/SASS_GULP_GMI/dist/'}
+  );
+
+  gulp.watch(paths.styleDirs.src, style);
+  gulp.watch('dist/index.html', reload)
+}
+//exports.default = style;
+
+exports.default = watch;
