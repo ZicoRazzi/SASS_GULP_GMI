@@ -1,0 +1,26 @@
+{
+  "name": "sass_oefensite",
+  "version": "1.0.0",
+  "description": "test voor sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZicoRazzi/SASS_GULP_GMI.git"
+  },
+  "keywords": [
+    "sass",
+    "gulp"
+  ],
+  "author": "Zico Razzi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZicoRazzi/SASS_GULP_GMI/issues"
+  },
+  "homepage": "https://github.com/ZicoRazzi/SASS_GULP_GMI#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
