@@ -1,0 +1,31 @@
+@import 'partials/variabelen';
+
+*{
+  box-sizing: border-box;
+
+}
+body{
+  font-family: $text-font;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+@import 'partials/header';
+
+h1, h2, h3{
+  color: $thema-color;
+  font-family: $header-fonts;
+}
+
+#content-box{
+  width: $main-size;
+  max-width: $main-size;
+}
+.content{
+  width: $content-size;
+}
+aside{
+  width: $aside-size;
+}

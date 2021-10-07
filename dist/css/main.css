@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, san-serif;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #000;
+  color: #fff;
+}
+
+h1, h2, h3 {
+  color: #4d4a4a;
+  font-family: Georgia, serif;
+}
+
+header {
+  background-color: #4d4a4a;
+  color: #fff;
+  height: 80px;
+}
+
+#content-box {
+  width: 960px;
+  max-width: 960px;
+}
+
+.content {
+  width: 600px;
+}
+
+aside {
+  width: 320px;
+}
