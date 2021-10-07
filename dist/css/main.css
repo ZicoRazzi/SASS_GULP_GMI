@@ -1,3 +1,7 @@
+body li {
+  list-style-type: none;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -25,14 +29,14 @@ header li {
 }
 header a {
   text-decoration: none;
-  color: #900;
+  color: #ff5100;
 }
 header a:hover {
-  color: black;
+  color: #662000;
 }
 
 h1, h2, h3 {
-  color: #900;
+  color: #ff5100;
   font-family: Georgia, serif;
 }
 
@@ -42,10 +46,20 @@ h1, h2, h3 {
   justify-content: space-between;
   width: 100%;
   max-width: 100%;
+  min-height: 600px;
 }
 #content-box .content {
   width: 75%;
+  padding: 20px 20px 20px 10px;
 }
 #content-box aside {
   width: 25%;
+  padding: 20px 0px;
+}
+#content-box aside li {
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
 }

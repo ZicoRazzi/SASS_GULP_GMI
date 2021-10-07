@@ -4,10 +4,16 @@
   justify-content: space-between;
   width: $main-size;
   max-width: $main-size;
+  min-height: 600px;
   .content{
     width: $content-size;
+    padding: 20px 20px 20px 10px;
   }
   aside{
     width: $aside-size;
+    padding: 20px 0px;
+    li{
+      margin-top: 20px;
+    }
   }
 }

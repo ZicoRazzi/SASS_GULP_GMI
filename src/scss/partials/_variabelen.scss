@@ -1,7 +1,7 @@
 //+++++ colors +++++
 $text-color: #fff;
 $thema-color: rgb(77, 74, 74);
-$link-color: #900;
+$link-color: rgb(255, 81, 0);
 $menu-color: $link-color;
 $hover-color: darken($link-color, 30%);
 $bg-color: #000;
@@ -15,5 +15,11 @@ $main-size: 100%;
 $content-size: 75%;
 $aside-size: 25%;
 $header-height: 120px;
+
+body{
+  li{
+    list-style-type: none;
+  }
+}
 
 
