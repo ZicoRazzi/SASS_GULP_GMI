@@ -25,6 +25,10 @@ header li {
 }
 header a {
   text-decoration: none;
+  color: #900;
+}
+header a:hover {
+  color: black;
 }
 
 h1, h2, h3 {
@@ -32,20 +36,16 @@ h1, h2, h3 {
   font-family: Georgia, serif;
 }
 
-h1, h2, h3 {
-  color: #4d4a4a;
-  font-family: Georgia, serif;
-}
-
 #content-box {
-  width: 960px;
-  max-width: 960px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
 }
-
-.content {
-  width: 600px;
+#content-box .content {
+  width: 75%;
 }
-
-aside {
-  width: 320px;
+#content-box aside {
+  width: 25%;
 }

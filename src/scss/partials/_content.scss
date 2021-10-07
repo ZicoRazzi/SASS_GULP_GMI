@@ -1,0 +1,13 @@
+#content-box{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: $main-size;
+  max-width: $main-size;
+  .content{
+    width: $content-size;
+  }
+  aside{
+    width: $aside-size;
+  }
+}

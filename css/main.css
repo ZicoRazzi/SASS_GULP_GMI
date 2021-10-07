@@ -34,6 +34,11 @@ header li {
 
 header a {
   text-decoration: none;
+  color: #900;
+}
+
+header a:hover {
+  color: black;
 }
 
 h1, h2, h3 {
@@ -42,15 +47,25 @@ h1, h2, h3 {
 }
 
 #content-box {
-  width: 960px;
-  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
 }
 
-.content {
-  width: 600px;
+#content-box .content {
+  width: 75%;
 }
 
-aside {
-  width: 320px;
+#content-box aside {
+  width: 25%;
 }
 /*# sourceMappingURL=main.css.map */

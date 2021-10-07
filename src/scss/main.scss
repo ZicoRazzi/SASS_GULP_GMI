@@ -19,13 +19,4 @@ h1, h2, h3{
   font-family: $header-fonts;
 }
 
-#content-box{
-  width: $main-size;
-  max-width: $main-size;
-}
-.content{
-  width: $content-size;
-}
-aside{
-  width: $aside-size;
-}
+@import 'partials/content';
