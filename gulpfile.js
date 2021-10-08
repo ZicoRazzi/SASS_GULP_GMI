@@ -10,7 +10,7 @@ const paths = {
     //pattern: ** is alle directories
     //          * is alle karakters (namen bv .scss)
       src: 'src/scss/**/*.scss', 
-      dest: 'dist/css' 
+      dest: 'dist/css'
   } 
 };
 
@@ -39,3 +39,5 @@ function watch () {
 //exports.default = style;
 
 exports.default = watch;
+
+// function jsTask(){    return src([files.jsPath])        .pipe(concat('all.js'))        .pipe(uglify())        .pipe(dest('dist')    );}

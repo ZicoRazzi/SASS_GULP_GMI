@@ -12,8 +12,8 @@ $header-fonts: Arial, serif;
 
 //++++ sizes ++++
 $main-size: 100%;
-$content-size: 75%;
-$aside-size: 25%;
+$content-size: 80%;
+$aside-size: 20%;
 $header-height: 120px;
 
 body{
@@ -21,5 +21,7 @@ body{
     list-style-type: none;
   }
 }
-
+body._lock {
+  overflow: hidden;
+}
 

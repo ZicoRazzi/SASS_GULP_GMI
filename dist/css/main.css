@@ -3,6 +3,10 @@ body li {
   list-style-type: none;
 }
 
+body._lock {
+  overflow: hidden;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -22,49 +26,49 @@ header {
   left: 0;
   z-index: 50;
 }
-header .header-body {
+header .header_body {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #4d4a4a;
   color: #fff;
   height: 120px;
-  padding: 12px 20px;
+  padding: 12px 30px;
 }
-header .header-body .header-title {
+header .header_body .header_title {
   margin-left: 100px;
 }
-header .header-body .header-logo {
+header .header_body .header_logo {
   flex: 0 0 50px;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
   z-index: 3;
 }
-header .header-body .header-logo img {
+header .header_body .header_logo img {
   max-width: 100%;
   display: block;
   /* display:block чтобы подрезание внису у картинки не было */
 }
-header .header-body li {
+header .header_body li {
   display: inline;
 }
-header .header-body .header-link {
+header .header_body .header_link {
   margin-left: 20px;
   text-transform: uppercase;
   text-decoration: none;
   color: #ff5100;
 }
-header .header-body a:hover {
+header .header_body a:hover {
   color: #662000;
 }
 
 @media (max-width: 767px) {
-  .header-body {
+  .header_body {
     align-items: center;
     justify-content: center;
   }
-  .header-body .header-burger {
+  .header_body .header_burger {
     display: block;
     position: relative;
     width: 40px;
@@ -72,7 +76,7 @@ header .header-body a:hover {
     position: relative;
     z-index: 3;
   }
-  .header-body .header-burger span {
+  .header_body .header_burger span {
     background-color: #fff;
     position: absolute;
     width: 100%;
@@ -81,7 +85,7 @@ header .header-body a:hover {
     top: 9px;
     transition: all 0.3s ease 0s;
   }
-  .header-body .header-menu {
+  .header_body .header_menu {
     position: fixed;
     top: -100%;
     left: 0;
@@ -92,8 +96,8 @@ header .header-body a:hover {
     background-color: #4d4a4a;
     padding: 100px 20px 20px 60px;
   }
-  .header-body .header-burger::before,
-.header-body .header-burger::after {
+  .header_body .header_burger::before,
+.header_body .header_burger::after {
     content: "";
     background-color: #fff;
     position: absolute;
@@ -102,32 +106,32 @@ header .header-body a:hover {
     left: 0;
     transition: all 0.5s ease 0s;
   }
-  .header-body .header-burger::before {
+  .header_body .header_burger::before {
     top: 0;
   }
-  .header-body .header-burger::after {
+  .header_body .header_burger::after {
     bottom: 0;
   }
-  .header-body .header-burger.active::before {
+  .header_body .header_burger.active::before {
     transform: rotate(45deg);
     top: 9px;
   }
-  .header-body .header-burger.active::after {
+  .header_body .header_burger.active::after {
     transform: rotate(-45deg);
     bottom: 9px;
   }
-  .header-body .header-burger.active span {
+  .header_body .header_burger.active span {
     transform: scale(0);
   }
-  .header-body .header-menu.active {
+  .header_body .header_menu.active {
     top: 0px;
   }
-  .header-body .header-link {
+  .header_body .header_link {
     display: block;
     font-size: 24px;
     margin: 0px 0px 20px 20px;
   }
-  .header-body .header-title {
+  .header_body .header_title {
     margin-left: 20px;
   }
 }
@@ -136,7 +140,7 @@ h1, h2, h3 {
   font-family: Arial, serif;
 }
 
-#content-box {
+#content_box {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -145,43 +149,53 @@ h1, h2, h3 {
   min-height: 600px;
   margin-top: 100px;
 }
-#content-box .content {
-  width: 75%;
+#content_box .content {
+  width: 80%;
   padding: 20px 20px 20px 10px;
 }
-#content-box aside {
-  width: 25%;
+#content_box .content .page_title {
+  margin-top: 50px;
+}
+#content_box aside {
+  width: 20%;
   padding: 20px 0px;
 }
-#content-box aside li {
-  margin-top: 20px;
+#content_box aside ul {
+  position: fixed;
 }
-#content-box aside a {
+#content_box aside li {
+  margin-bottom: 20px;
+}
+#content_box aside li:first-of-type {
+  margin-top: 70px;
+}
+#content_box aside a {
   text-decoration: none;
   color: #10b101;
   cursor: pointer;
 }
 
 @media (max-width: 767px) {
-  #content-box {
+  #content_box {
     flex-direction: column-reverse;
   }
-  #content-box .content {
+  #content_box .content {
     width: 100%;
     padding: 20px;
   }
-  #content-box aside {
+  #content_box aside {
     width: 100%;
     display: flex;
     justify-content: center;
     height: 80px;
+    margin-bottom: 50px;
   }
-  #content-box aside li {
+  #content_box aside li {
     display: inline-block;
     margin-left: 50px;
   }
-  #content-box aside li:first-of-type {
-    margin-left: 0px;
+  #content_box aside li:first-of-type {
+    margin-left: 10px;
   }
 }
 footer {

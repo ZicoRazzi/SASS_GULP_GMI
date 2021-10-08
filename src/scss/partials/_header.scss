@@ -5,26 +5,26 @@ header {
   left: 0;
   z-index: 50;
 
-  .header-body {
+  .header_body {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: $thema-color;
     color: $text-color;
     height: $header-height;
-    padding: 12px 20px;
+    padding: 12px 30px;
 
-    .header-title {
+    .header_title {
       margin-left: 100px;
     }
-    .header-logo {
+    .header_logo {
       flex: 0 0 50px;
       border-radius: 50%;
       overflow: hidden;
       position: relative;
       z-index: 3;
     }
-    .header-logo img {
+    .header_logo img {
       max-width: 100%;
       display: block;
       /* display:block чтобы подрезание внису у картинки не было */
@@ -34,7 +34,7 @@ header {
     li {
       display: inline;
     }
-    .header-link {
+    .header_link {
       margin-left: 20px;
       text-transform: uppercase;
       text-decoration: none;
@@ -48,11 +48,11 @@ header {
 }
 
 @media (max-width: 767px) {
-  .header-body {
+  .header_body {
     
       align-items: center;
       justify-content: center;
-    .header-burger {
+    .header_burger {
       display: block;
       position: relative;
       width: 40px;
@@ -70,7 +70,7 @@ header {
         transition: all 0.3s ease 0s;
       }
     }
-    .header-menu {
+    .header_menu {
       position: fixed;
       top: -100%;
       left: 0;
@@ -81,8 +81,8 @@ header {
       background-color: $thema-color;
       padding: 100px 20px 20px 60px;
     }
-    .header-burger::before,
-    .header-burger::after {
+    .header_burger::before,
+    .header_burger::after {
       content: "";
       background-color: #fff;
       position: absolute;
@@ -91,33 +91,33 @@ header {
       left: 0;
       transition: all 0.5s ease 0s;
     }
-    .header-burger::before {
+    .header_burger::before {
       top: 0;
     }
-    .header-burger::after {
+    .header_burger::after {
       bottom: 0;
     }
-    .header-burger.active::before {
+    .header_burger.active::before {
       transform: rotate(45deg);
       top: 9px;
     }
-    .header-burger.active::after {
+    .header_burger.active::after {
       transform: rotate(-45deg);
       bottom: 9px;
     }
-    .header-burger.active span {
+    .header_burger.active span {
       transform: scale(0);
     }
-    .header-menu.active {
+    .header_menu.active {
       top: 0px;
     }
    
-    .header-link {
+    .header_link {
       display: block;
       font-size: 24px;
       margin: 0px 0px 20px 20px;
     }
-    .header-title {
+    .header_title {
       margin-left: 20px;
     }
     // .content {

@@ -1,4 +1,4 @@
-#content-box{
+#content_box{
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -9,13 +9,24 @@
   .content{
     width: $content-size;
     padding: 20px 20px 20px 10px;
-    
+    .page_title{
+      margin-top: 50px;
+    }
   }
   aside{
+   
     width: $aside-size;
     padding: 20px 0px;
+    ul{
+      position: fixed;
+    }
     li{
-      margin-top: 20px;
+      margin-bottom: 20px;
+      
+    }
+    
+    li:first-of-type{
+      margin-top: 70px;
     }
     a{
       text-decoration: none;
@@ -26,7 +37,7 @@
 }
 
 @media (max-width: 767px) {
-  #content-box{
+  #content_box{
    flex-direction: column-reverse;
    .content{
     width: 100%;
@@ -37,13 +48,15 @@
     display:flex;
     justify-content: center;
     height: 80px;
-   
+    margin-bottom: 50px;
+    
     li{
       display: inline-block;
       margin-left: 50px;
+      
       }
     li:first-of-type{
-      margin-left: 0px;
+      margin-left: 10px;
     }
      
   }
