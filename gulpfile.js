@@ -1,6 +1,7 @@
 const gulp = require('gulp'),
       sass = require('gulp-sass')(require('sass')),
-      browserSync = require('browser-sync').create();
+      browserSync = require('browser-sync').create(),
+      jquery = require('jquery'); 
 
 //werk directory paden
 // add paths // styleDirs directories voor de styles

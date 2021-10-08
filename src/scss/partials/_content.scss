@@ -5,9 +5,11 @@
   width: $main-size;
   max-width: $main-size;
   min-height: 600px;
+  margin-top: 100px;
   .content{
     width: $content-size;
     padding: 20px 20px 20px 10px;
+    
   }
   aside{
     width: $aside-size;
@@ -15,5 +17,35 @@
     li{
       margin-top: 20px;
     }
+    a{
+      text-decoration: none;
+      color: rgb(16, 177, 1);
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #content-box{
+   flex-direction: column-reverse;
+   .content{
+    width: 100%;
+    padding: 20px;
+  }
+  aside{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    height: 80px;
+   
+    li{
+      display: inline-block;
+      margin-left: 50px;
+      }
+    li:first-of-type{
+      margin-left: 0px;
+    }
+     
+  }
   }
 }
